@@ -1,1 +1,1 @@
-echo "valmiroliveirajr.adv.br" >> source/CNAME
+echo "valmiroliveirajr.adv.br" > source/CNAME
