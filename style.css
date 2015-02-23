@@ -1,0 +1,23 @@
+body {
+    background: url("background-2.png");
+    font: normal normal normal 12px/1.3em Tahoma,tahoma-w01-regular,tahoma-w02-regular,tahoma-w10-regular,tahoma-w15--regular,tahoma-w99-regular,sans-serif;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 370px;
+    height: 219px;
+    margin-top: 150px;
+}
+.address {
+    margin-top: 15px;
+}
+
+
+.address p {
+    padding: 0;
+    margin: 0;
+}
