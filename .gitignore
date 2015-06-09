@@ -9,3 +9,6 @@ templete/
 *.png
 *.doc
 templete/
+venv
+*.pyc
+staticfiles
