@@ -1,0 +1,1 @@
+web: gunicorn valmir.wsgi --log-file -
