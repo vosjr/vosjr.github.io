@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block 'container' %}
+<!-- begin contacts us -->
+<div id="contact_marker"></div>
+<div class="contacts">
+    <div class="row">
+        <div class="span12">
+            <div class="caption styler_color">CONTATO</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span8">
+            <div class="contact_form">
+                <form action="/" method="post" id="validForm">
+                    <input type="text" id="inputName" name="name" placeholder="Nome" />
+                    <input type="text" id="inputEmail" name="email" placeholder="Email Address" />
+                    <input type="text" name="subject" placeholder="Assunto" />
+                    <textarea id="textarea" name="comment" placeholder="Mensagem"></textarea>
+                    <!-- form disclaimer here -->
+                    <div class="note"><span class="styler_color">AVISO LEGAL:</span> O uso da Internet para comunicação com a empresa não vai estabelecer uma relação cliente-advogado e mensagens que contenham informações confidenciais ou sensíveis ao tempo não devem ser enviados.</div>
+                    <div class="checkbox">
+                        <input name="disclaimer" type="checkbox" value="" id="disclaimer" />
+                        <label>Eu li o aviso legal.</label>
+                    </div>
+                    <?php
+                        require_once('config.php');
+                        require_once('recaptchalib.php');
+                        if($use_recaptcha === true){
+                            echo recaptcha_get_html($publickey);
+                        }
+                    ?>
+                    <div id="result"></div>
+                    <input type="submit" value="ENVIAR" class="styler_bg_color" />                          
+                </form>
+                
+            </div>
+        </div>
+        <div class="span4">
+            <!-- begin address, phone & email -->
+            <div class="info">
+                <div class="header">ENDEREÇO, TELEFONE & EMAIL</div>
+                <div class="text">
+                    <!-- edit address, phone & email here -->
+                    <p>Valmir Oliveira Jr.</p>
+                    <p>Rua Professor José Brandão, 389</p>
+                    <p>Sala 303</p>
+                    <p>Boa Viagem, CEP 51020-180</p>
+                    <p>Recife</p>
+                    <p>Tel. 81 3034-4166</p>
+                    <p>Email: contato@valmiroliveirajr.adv.br</p>
+                </div>
+            </div>
+            <!-- /end address, phone & email -->
+            <!-- begin office hours -->
+            <div class="info">
+                <div class="header">HORÁRIO DO ESCRITÓRIO</div>
+                <div class="text">
+                    <!-- edit office hours here -->
+                    <p>Segunda: 8h às 18h </p>
+                    <p>Terça: 8h às 18h </p>
+                    <p>Quarta: 8h às 18h </p>
+                    <p>Quinta: 8h às 18h </p>
+                    <p>Sexta: 8h às 18h </p>
+                    <p>Sábado: Fechado </p>
+                    <p>Domingo: Fechado </p>
+                </div>
+            </div>
+            <!-- /end office hours -->
+        </div>
+    </div>
+</div>
+<!-- /end contacts us -->
+{% endblock %}
+{% block 'map' %}
+<!-- begin map -->
+<div id="map"></div>
+<!-- /end map -->
+{% endblock %}

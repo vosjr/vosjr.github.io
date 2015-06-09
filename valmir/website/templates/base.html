@@ -1,0 +1,155 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>Valmir Oliveira Jr. Advogados</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+        <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap-responsive.css' %}" />
+        <link type="text/css" rel="stylesheet" href="{% static 'js/rs-plugin/css/settings.css' %}" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <link type="text/css" rel="stylesheet" href="{% static 'css/font-awesome.css' %}" />
+        <link type="text/css" rel="stylesheet" href="{% static 'css/media.css' %}" />
+    </head>
+    <body style="background: url('{% static 'img/background.png' %}') repeat scroll 0 0 rgba(0, 0, 0, 0) !important;">
+        <div id="container" class="boxed-attached">
+            <div id="out">
+                <div id="home_marker"></div>
+                <div id="header">
+                    <div class="inner">
+                        <div class="top">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="contacts_block">
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <a href="#" class="scrollup"></a> -->
+                        </div>
+                        <div class="bottom">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="span3">
+                                        <object type="image/svg+xml" item-prop="image" id="logo" data="{% static 'img/logo.svg' %}"></object>
+                                    </div>
+                                    <div class="span9">
+                                        <div id="top_menu">
+                                            <div class="navbar">
+                                                <div class="container">
+                                                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                                        <span class="menu-btn-name">Menu</span>
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                    </a>                                                                              
+                                                    <div class="nav-collapse">
+                                                        <ul class="nav nav-pills">
+                                                            <!-- edit navigation menu -->
+                                                            <!-- <li class="styler_parent_active"><a href="{% url 'index' %}" class="styler_hover_bg_color styler_active_bg_color">Home</a></li> -->
+                                                            <li class="styler_parent_active"><a href="{% url 'about' %}" class="styler_hover_bg_color styler_active_bg_color">Quem Somos</a></li> 
+                                                            <li class="styler_parent_active"><a href="{% url 'practice_anchor' %}" class="styler_hover_bg_color styler_active_bg_color">ÁREAS DE ATUAÇÃO</a></li>
+                                                            <li class="styler_parent_active"><a href="{% url 'attorneys' %}" class="styler_hover_bg_color styler_active_bg_color">ADVOGADOS</a></li>
+                                                            <li class="styler_parent_active"><a href="{% url 'job' %}" class="styler_hover_bg_color styler_active_bg_color">TRABALHE CONOSCO</a></li>
+                                                            <li class="styler_parent_active"><a href="{% url 'contact' %}" class="styler_hover_bg_color styler_active_bg_color">CONTATO</a></li>
+                                                            <li class="styler_parent_active"><a href="{% url 'portfolio' %}" class="styler_hover_bg_color styler_active_bg_color">PORTFÓLIO</a></li>
+                                                            <!-- /end navigation menu -->
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="wrapper">
+                
+                    <!-- begin static home page banner -->
+                    <div id="main_advert">
+                        <div class="slide slide1">
+                            <img alt="" src="{% static 'img/carousel.jpg' %}" />
+                            <div class="container">
+                                <!-- <p class="cap-1">Há mais de 1 milhão de advogados nos Brasil, então por que escolher Valmir Oliveira Jr. Advogados?</p> -->
+                                <!-- <p class="cap-2">Porque nós tratamos o seu negócio como se fosse nosso próprio</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /end static home page banner -->
+                    
+                    <div class="container">
+
+                        {% block 'container' %}{% endblock %}
+
+                    </div>
+
+                    {% block 'map' %}{% endblock %}
+
+                </div>
+                <div id="empty"></div>
+            </div>
+        </div>
+
+        <!-- begin footer -->
+        <div id="footer">
+            <div class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="span6">
+                            <!-- edit footer logo here -->
+                            <a href="#" class="logo"><img src="{% static 'img/logo-foot-white.png' %}" alt="" /></a>
+                            <div class="text">
+                                <!-- edit board certifcation disclaimer here -->
+                                <p>Unless identified as such, attorneys listed in this website are not certified by the [State] Board of Legal Specialization.</p>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <!-- begin site-wide disclaimer -->
+                            <div class="text">
+                                <div class="header">AVISO LEGAL</div>
+                                <!-- type your site-wide disclaimer here -->
+                                <p>Todos os materiais contidos neste site, são disponibilizados por Valmir Oliveira Jr. apenas para fins informativos e não deve ser interpretado como aconselhamento legal. A transmissão e recepção de informações contidas neste site não faz nem constituir uma relação cliente-advogado. As pessoas não devem agir de acordo com informações encontradas neste site, sem antes procurar aconselhamento jurídico profissional.</p>
+                            </div>
+                            <!-- /end site-wide disclaimer -->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container">
+                    <div class="row">
+                        <!-- edit copyright notice here -->
+                        <div class="copyrights">© 2015 VALMIR OLIVEIRA JR. ADVOGADOS. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /end footer -->
+
+
+        <script type="text/javascript" src="{% static 'js/jquery-1.8.3.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+        
+        <!-- start style switcher -->
+        <!-- // <script type="text/javascript" src="js/style-switcher/style-switcher.js"></script> -->
+        <!-- /end style switcher -->
+        
+        <script type="text/javascript" src="{% static 'js/rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/rs-plugin/js/jquery.themepunch.plugins.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.carouFredSel-6.2.1.js' %}"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.easy-pie-chart.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/library.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/function.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/mail_validation.js' %}"></script>
+
+    </body>
+</html>
