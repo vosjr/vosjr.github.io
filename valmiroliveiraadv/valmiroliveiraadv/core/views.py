@@ -6,3 +6,6 @@ def home(request):
 
 def escritorio(request):
     return render(request,'escritorio.html')
+
+def area_atuacao(request):
+    return render(request, 'area_atuacao.html')
