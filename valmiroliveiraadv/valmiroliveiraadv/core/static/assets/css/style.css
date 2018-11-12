@@ -83,6 +83,17 @@ This files contents are outlined below.
     color: #FFF
 }
 
+/*-----------------------------------------------------
+  0.Transparency
+------------------------------------------------------*/
+
+.transparencia {
+     filter:alpha(opacity=50);
+     opacity: 0.5;
+     -moz-opacity:0.5;
+     -webkit-opacity:0.5;
+}
+
 /*----------------------------------
    1.Start button
 ------------------------------------*/
