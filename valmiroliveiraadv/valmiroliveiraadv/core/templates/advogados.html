@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+
+<!-- CSS AND LINK FOR ICONS FROM BOOTSTRAP-->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+<style>
+
+.glyphicon glyphicon-briefcase {
+    color:black;
+}
+
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+small {
+    display: block;
+    line-height: 1.428571429;
+    color: #999;
+}
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+</style>
+
+<!-- #banner start -->
+   <div class="card" style="padding-left: 0.5%; padding-right: 0.5%; margin-top: -50px;">
+       <div class="card-body" style="background-color:#404249; ">
+            <blockquote class="blockquote mb-0">
+
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row" style="background-color:grey;">
+                    <div class="title pull-left" style="margin-left:1%;">
+                        <h4 name="advogado" style="color:white;">Henrique Nunes</h4>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:2%;">
+                      <div class="col-sm-6 col-md-8 pull-left">
+                          <ul class="pull-left">
+                              <li style="margin-left:-27%;"><span class="glyphicon glyphicon-briefcase" style="color:grey;"></span>Área: Trabalhista</li>
+                              <li style="margin-left:-15%;"><span class="glyphicon glyphicon-phone-alt"></span>Tel: (81) 99999-9999</li>
+                              <li><span class="glyphicon glyphicon-envelope"></span>Email: Israel@valmir.com</li>
+                          </ul>
+                      </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            </blockquote>
+        </div>
+   </div>
+</div>
+</div>
+<!-- /#banner end -->
+
+
+{% endblock %}
