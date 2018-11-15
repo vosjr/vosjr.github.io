@@ -88,24 +88,29 @@ This files contents are outlined below.
 ------------------------------------------------------*/
 
 .transparencia {
-     filter:alpha(opacity=50);
-     opacity: 0.5;
-     -moz-opacity:0.5;
-     -webkit-opacity:0.5;
+     filter:alpha(opacity=80);
+     opacity: 0.8;
+
+}
+
+.transparencia-logo {
+     filter:alpha(opacity=80);
+     opacity: 0.8;
+
 }
 
 /*----------------------------------
    1.Start button
 ------------------------------------*/
 .btn{
-padding: 18px 40px;
+    padding: 8px 50px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 100;
     border-radius: 0px;
-      display: inline-block;
+    display: inline-block;
     border: 0;
-     text-transform: uppercase;
-     text-decoration: none !important;
+    text-transform: uppercase;
+    text-decoration: none !important;
 
 }
 

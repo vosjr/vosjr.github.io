@@ -36,12 +36,12 @@
                   <div class="col-md-4 p0">
                      <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#min_navbar">
-                        <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand logo-biss" href="index.html">Valmir Oliveira Advogados </a>
+                        <a class="navbar-brand logo-biss" href="/" style="text-shadow: 2px 2px #000000">Valmir Oliveira Advogados </a>
+
                      </div>
                   </div>
                   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,16 +49,16 @@
                      <div class="collapse navbar-collapse" id="min_navbar">
                         <ul class="nav navbar-nav navbar-right">
                            <li class="dropdown submenu">
-                              <a href="index.html" class="">Início</a>
+                              <a href="/" class="">Início</a>
                            </li>
                            <li class="dropdown submenu">
-                              <a href="about.html" class="">Escritório</a>
+                              <a href="{% url 'escritorio' %}" class="">Escritório</a>
                            </li>
                            <li class="dropdown submenu">
                               <a href="{% url 'area_atuacao' %}" class="">Atuação</a>
                            </li>
                            <li class="dropdown submenu">
-                              <a href="{% url 'advogados' %}" class="">Advogados</a>
+                              <a href="blog.html" class="">Advogados</a>
                            </li>
                            <li class="dropdown submenu">
                               <a href="elements.html" class="">Área do Cliente</a>
@@ -75,7 +75,7 @@
             </nav>
             <!-- End Header_Area -->
 
-
+<br>
             {% block content %}
 
             {% endblock %}
@@ -87,7 +87,6 @@
          <div class="book_now_aera ">
             <div class="container wow fadeInUp">
                <div class="row book_now">
-
 
                   <div class="col-md-4">
                     <!--
@@ -106,20 +105,27 @@
 
                      <p style="color:white;">Área administrativa</p>
 
-                     <br><button class="btn btn-secondary">Login</button>
+                     <br><button class="btn btn-secondary" style="opacity:0.7;" href="{% url 'admin'}">Login</button>
                   </div>
+<!--
+                  <br><br>
 
                   <div class="col-md-4">
-
+                    <div class="card" style= "background-color:#DCDCDC; width:60%;opacity:0.6;" >
+                        <img height="200" width="200" src="https://raw.githubusercontent.com/vosjr/vosjr.github.io/master/logo2.png"></img>
+                    </div>
                   </div>
+-->
+                <div class="col-md-4">
+                </div>
 
                   <div class="col-md-3">
                      <h2 class="footer-top">Links Ágeis</h2>
                      <ul class="footer-menu">
-                        <li><a href="">  Início      </a></li>
-                        <li><a href="">  Escritório  </a> </li>
-                        <li><a href="">  Atuação     </a> </li>
-                        <li><a href="">  Contato     </a> </li>
+                        <li><a href="/">           Início              </a></li>
+                        <li><a href="{% url 'escritorio'}">  Escritório          </a> </li>
+                        <li><a href="{% url 'cliente'}">  Aréa do cliente     </a> </li>
+                        <li><a href="{% url 'contato'}">  Contato             </a> </li>
                      </ul>
                   </div>
 

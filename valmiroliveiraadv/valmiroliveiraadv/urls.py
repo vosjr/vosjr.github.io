@@ -15,13 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from valmiroliveiraadv.core.views import home, escritorio, area_atuacao, advogados
+from valmiroliveiraadv.core.views import home
+from valmiroliveiraadv.core.views import escritorio
+from valmiroliveiraadv.core.views import area_atuacao
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path("", home, name="home"),
-    path("escritorio/", escritorio, name="escritorio"),
-    path("atuacao/", area_atuacao, name="area_atuacao"),
-    path("advogados/", advogados, name="advogados")
+    path("escritorio", escritorio, name="escritorio"),
+    path("atuacao", area_atuacao, name="area_atuacao"),
 
 ]

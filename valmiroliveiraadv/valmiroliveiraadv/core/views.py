@@ -9,6 +9,3 @@ def escritorio(request):
 
 def area_atuacao(request):
     return render(request, 'area_atuacao.html')
-
-def advogados(request):
-    return render(request, 'advogados.html')
