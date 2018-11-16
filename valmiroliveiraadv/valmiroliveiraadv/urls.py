@@ -18,7 +18,7 @@ from django.urls import path
 from valmiroliveiraadv.core.views import home
 from valmiroliveiraadv.core.views import escritorio
 from valmiroliveiraadv.core.views import area_atuacao
-from valmiroliveiraadv.core.views import advogados
+from valmiroliveiraadv.core.views import contato
 
 
 urlpatterns = [
@@ -26,6 +26,6 @@ urlpatterns = [
     path("", home, name="home"),
     path("escritorio", escritorio, name="escritorio"),
     path("atuacao", area_atuacao, name="area_atuacao"),
-    path("advogados", advogados, name="advogados"),
+    path("contato", contato, name="contato"),
 
 ]
