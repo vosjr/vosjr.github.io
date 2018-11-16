@@ -12,3 +12,6 @@ def area_atuacao(request):
 
 def contato(request):
     return render(request, 'contato.html')
+
+def advogados(request):
+    return render(request, 'advogados.html')
