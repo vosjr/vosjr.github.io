@@ -99,9 +99,63 @@ This files contents are outlined below.
 
 }
 
+.formulario-contato {
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+
+.mapa {
+    margin: -40% 10% 10% 50%;
+    position: relative;
+    width:40%;
+    height: 40%;
+}
+
 /*----------------------------------
    1.Start button
 ------------------------------------*/
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #DD0000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 2px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 .btn{
     padding: 8px 50px;
     font-size: 20px;
@@ -1775,7 +1829,7 @@ padding-bottom: 90px;
 .our_footer_area{
   background-image: url(../images/footer-img.jpg);
     padding-top:70px;
-    padding-bottom: 90px;
+    padding-bottom: 20px;
     background-repeat: no-repeat;
     background-position: center top;
     -webkit-background-size: cover;

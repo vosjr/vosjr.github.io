@@ -5,17 +5,126 @@
 {% block content %}
 
 <!-- #banner start -->
-<div class="container">
-   <div class="card" style="padding-left: 0.5%; padding-right: 0.5%; margin-top: -50px;">
-       <div class="card-body transparencia" style="background-color:#08001B";>
-            <blockquote class="blockquote mb-0">
 
-                TODO
-            </blockquote>
-        </div>
-   </div>
+<section id="banner" class="pb_0" >
+       <div class="container ">
+          <div class="row">
+             <!-- #banner-text start -->
+             <div id="banner-text" class="col-md-12 text-c  ">
+                <div class="left-borders">
+                   <p  class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s"> one simple goal : </p>
+                   <h5 class="wow fadeInUp main-h" data-wow-delay="0.2s" >working tirlessly <br>  toward successful resolutions</h5>
+                </div>
+                <p class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s">Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum has been the industry's standard dummy text<br> ever since the 1500s, </p>
+             </div>
+             <!-- /#banner-text End -->
+          </div>
+          <div class="row mt-100 p-0">
+             <!--#about-text start -->
+             <div class="who_we_area col-md-4 col-sm-6 wow fadeInUp">
+                <div class="service-1 green-after">
+                   <div class="servise-top wow fadeInUp">
+                      <img src="{% static 'assets/images/service_c.png' %}">
+                   </div>
+                   <h2 class="unify"> Established  &<br> business litigation </h2>
+                   <div class="button-div">
+                      <a href="" class="button-s"> Learn more   </a>
+                   </div>
+                </div>
+             </div>
+             <div class="who_we_area col-md-4 col-sm-6  wow fadeInUp">
+                <div class="service-1 pink-after">
+                   <div class="servise-top wow fadeInUp">
+                      <img src="{% static 'assets/images/service_d.png' %}">
+                   </div>
+                   <h2 class="unify"> REAL PROPERTY <br>LITIGATION </h2>
+                   <div class="button-div">
+                      <a href="" class="button-s"> Learn more   </a>
+                   </div>
+                </div>
+             </div>
+             <div class="who_we_area col-md-4 col-sm-6  wow fadeInUp">
+                <div class="service-1 purple-after">
+                   <div class="servise-top wow fadeInUp">
+                      <img src="{% static 'assets/images/service_e.png' %}">
+                   </div>
+                   <h2 class="unify"> PERSONAL INJURY <br>LITIGATION </h2>
+                   <div class="button-div">
+                      <a href="" class="button-s"> Learn more   </a>
+                   </div>
+                </div>
+             </div>
+             <!--#End about-text  -->
+          </div>
+       </div>
+    </section>
+ </div>
 </div>
-</div>
-</div>
+<!-- /#banner end -->
+
+
+<!--start Why Choose Us Area -->
+<section class="">
+ <div class="container">
+    <div class="row text-center  ">
+       <div class="title wow fadeInUp">
+          <h1>News & Resources</h1>
+          <div class="hed_img">
+             <img src="{% static 'assets/images/headding-img.png' %}">
+          </div>
+          <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br> Ipsum has been the industry's standard.  </p>
+       </div>
+    </div>
+    <div class="row about_row ">
+       <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+          <a href="blog-single.html">      <img src="{% static 'assets/images/blog/blog-home-1.png' %}"></a>
+          <div class="blog-body">
+              <h1> <a href="blog-single.html"> Lorem Ipsum is simply  </a>    </h1>
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
+             <div class="">
+                <a href="blog-single.html" class="button-buttom"> read more   </a>
+             </div>
+          </div>
+       </div>
+       <div class="col-md-4  wow fadeInUp">
+           <a href="blog-single.html"><img src="{% static 'assets/images/blog/blog-home-2.png' %}">
+           </a>
+          <div class="blog-body">
+             <h1> <a href="blog-single.html"> Lorem Ipsum is simply  </a>    </h1>
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting   <br>industry.    </p>
+             <div class="">
+                <a href="blog-single.html" class="button-buttom"> read more   </a>
+             </div>
+          </div>
+       </div>
+       <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+           <a href="blog-single.html">
+          <img src="{% static 'assets/images/blog/blog-home-3.png' %}"></a>
+          <div class=" blog-body">
+              <h1> <a href="blog-single.html"> Lorem Ipsum is simply  </a>    </h1>
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry.    </p>
+             <div class="">
+                <a href="blog-single.html" class="button-buttom"> read more   </a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+</section>
+<!--End Why Choose Us Area -->
+
+
+  <!-- jQuery JS -->
+  <script src="assets/js/jquery-1.12.0.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Animate JS -->
+  <script src="assets/vendors/animate/wow.min.js"></script>
+
+  <script src="assets/vendors/owl_carousel/owl.carousel.min.js"></script>
+
+  <!-- Theme JS -->
+  <script src="assets/js/theme.min.js"></script>
 
 {% endblock %}
