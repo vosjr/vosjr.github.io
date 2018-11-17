@@ -15,3 +15,6 @@ def contato(request):
 
 def advogados(request):
     return render(request, 'advogados.html')
+
+def cliente(request):
+    return render(request, 'area_cliente.html')

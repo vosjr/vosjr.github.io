@@ -20,6 +20,7 @@ from valmiroliveiraadv.core.views import escritorio
 from valmiroliveiraadv.core.views import area_atuacao
 from valmiroliveiraadv.core.views import contato
 from valmiroliveiraadv.core.views import advogados
+from valmiroliveiraadv.core.views import cliente
 
 urlpatterns = [
     path('admin', admin.site.urls),
@@ -27,7 +28,9 @@ urlpatterns = [
     path("escritorio", escritorio, name="escritorio"),
     path("atuacao", area_atuacao, name="area_atuacao"),
     path("contato", contato, name="contato"),
-    path("advogados", advogados, name="advogados")
+    path("advogados", advogados, name="advogados"),
+    path("cliente", cliente, name="area_cliente")
+
 
 
 ]
