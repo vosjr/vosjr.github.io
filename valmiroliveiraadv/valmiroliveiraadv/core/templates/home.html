@@ -5,12 +5,23 @@
 {% block content %}
 
 <!-- #banner start -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+   .newsBody {
+      display:none;
+   }
+   .SocialNetworkBody {
+       display:none;
+   }
+
+</style>
 
 <section id="banner" class="pb_0" >
        <div class="container ">
           <div class="row">
              <!-- #banner-text start -->
-             <div id="banner-text" class="col-md-12 text-c  ">
+             <div id="banner-text" class="col-md-12 text-c ">
                 <div class="left-borders">
                    <p  class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s"> one simple goal : </p>
                    <h5 class="wow fadeInUp main-h" data-wow-delay="0.2s" >working tirlessly <br>  toward successful resolutions</h5>
@@ -75,38 +86,156 @@
           <p> Notícias e Novidades em nossas Redes Sociais </p>
        </div>
     </div>
-    <div>
        <br />
 
     <div class="row about_row ">
 
-       <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" style="margin-left:0%;">
-          <h1 class="title" style="margin-bottom:7%;">Notícias</h1>
-          <a href="blog-single.html">      <img src="{% static 'assets/images/blog/blog-home-1.png' %}"></a>
-          <div class="blog-body">
-               Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> Lorem Ipsum is simply  </a>   </h1>
-             <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
-             <div class="">
-                <a href="blog-single.html" class="button-buttom"> read more   </a>
+          <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp"  style="margin-left:0%;">
+            <!--News I-->
+            <div class="w3-content newsBody">
+                <h1 class="title" style="margin-bottom:7%;">Notícias</h1>
+                <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao.jpg' %}"></a>
+                <div class="blog-body">
+                    Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> Imposto é Roubo  </a>   </h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
+                    <div class="">
+                    <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+                    </div>
+                </div>
              </div>
+            <!--News II-->
+             <div class="w3-content newsBody">
+                    <h1 class="title" style="margin-bottom:7%;">Notícias</h1>
+                    <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao2.jpg' %}"></a>
+                    <div class="blog-body">
+                        Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> FGTS é Roubo  </a>   </h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
+                        <div class="">
+                        <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+                        </div>
+                    </div>
+                 </div>
+
+                 <!--News III-->
+             <div class="w3-content newsBody">
+                        <h1 class="title" style="margin-bottom:7%;">Notícias</h1>
+                        <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao1.jpg' %}"></a>
+                        <div class="blog-body">
+                            Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> Fim da CLT  </a>   </h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
+                            <div class="">
+                            <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+                            </div>
+                        </div>
+                     </div>
+
+             <div class="w3-center">
+                    <div class="w3-section">
+                       <button class="btn btn-secondary" onclick="plusDivsNews(-1)">❮ Prev</button>
+                        <button class="btn btn-secondary" onclick="plusDivsNews(1)">Next ❯</button>
+                    </div>
+
+                  </div>
           </div>
-       </div>
-       <div>
-       <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" style="margin-left:30%;">
-          <h1 class="title" style="margin-bottom:7%;">Rede Sociais</h1>
-           <a href="blog-single.html">
-          <img src="{% static 'assets/images/blog/blog-home-3.png' %}"></a>
-          <div class=" blog-body">
-             Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> Lorem Ipsum is simply  </a>   </h1>
-             <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry.    </p>
-             <div class="">
-                <a href="blog-single.html" class="button-buttom"> read more   </a>
-             </div>
-          </div>
-       </div>
+
+
+             <!--End News-->
+
+
+        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" style="margin-left:30%;">
+            <!--News I-->
+            <div class="w3-content socialNetworkBody">
+                    <h1 class="title" style="margin-bottom:7%;">Rede Socais</h1>
+                    <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao1.jpg' %}"></a>
+                    <div class="blog-body">
+                        Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> Imposto é Roubo  </a>   </h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
+                        <div class="">
+                        <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+                        </div>
+                    </div>
+                 </div>
+                <!--News II-->
+                 <div class="w3-content socialNetworkBody">
+                        <h1 class="title" style="margin-bottom:7%;">Notícias</h1>
+                        <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao2.jpg' %}"></a>
+                        <div class="blog-body">
+                            Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> FGTS é Roubo  </a>   </h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
+                            <div class="">
+                            <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+                            </div>
+                        </div>
+                     </div>
+
+                     <!--News III-->
+                 <div class="w3-content socialNetworkBody">
+                            <h1 class="title" style="margin-bottom:7%;">Notícias</h1>
+                            <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao3.jpg' %}"></a>
+                            <div class="blog-body">
+                                Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> Fim da CLT  </a>   </h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
+                                <div class="">
+                                <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+                                </div>
+                            </div>
+                         </div>
+
+                 <div class="w3-center">
+                        <div class="w3-section">
+                           <button class="btn btn-secondary" onclick="plusDivsSN(-1)">❮ Prev</button>
+                            <button class="btn btn-secondary" onclick="plusDivsSN(1)">Next ❯</button>
+                        </div>
+
+                      </div>
+              </div>
+
+
+                 <!--End News-->
+        </div>
     </div>
- </div>
 </section>
+
+<script>
+var slideIndexNews = 1;
+showDivsNews(slideIndexNews);
+
+function plusDivsNews(n) {
+  showDivsNews(slideIndexNews += n);
+}
+
+
+function showDivsNews(n) {
+  var i;
+  var x = document.getElementsByClassName("newsBody");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndexNews = 1}
+  if (n < 1) {slideIndexNews = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndexNews-1].style.display = "block";
+}
+
+var slideIndexSN = 1;
+showDivsSN(slideIndexSN);
+
+function plusDivsSN(n) {
+  showDivsSN(slideIndexSN += n);
+}
+
+
+function showDivsSN(n) {
+  var i;
+  var x = document.getElementsByClassName("socialNetworkBody");
+  if (n > x.length) {slideIndexSN = 1}
+  if (n < 1) {slideIndexSN = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndexSN-1].style.display = "block";
+}
+</script>
 <!--End Why Choose Us Area -->
 
 
