@@ -25,7 +25,7 @@ SECRET_KEY = '=be^!_o!$najjl5wtlllsywz+s$28ajp1og!(ar_gahx^2@ys4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.8']
 
 
 # Application definition
@@ -111,6 +111,7 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_L10N = True
+
 
 USE_TZ = True
 
