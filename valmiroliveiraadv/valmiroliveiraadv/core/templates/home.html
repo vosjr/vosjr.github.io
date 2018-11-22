@@ -10,10 +10,18 @@
 
    .newsBody {
       display:none;
+
    }
    .SocialNetworkBody {
        display:none;
    }
+
+   .row {
+        margin: 0 auto;
+   }
+
+
+
 
 </style>
 
@@ -75,7 +83,7 @@
 
 
 <!--start Why Choose Us Area -->
-<section class="">
+<section class="section">
  <div class="container">
     <div class="row text-center  ">
        <div class="title wow fadeInUp">
@@ -87,13 +95,15 @@
        </div>
     </div>
        <br />
+        <br />
+
 
     <div class="row about_row ">
 
-          <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp"  style="margin-left:0%;">
+          <div class="col-md-5 col-sm-10 col-xs-12 wow fadeInUp">
             <!--News I-->
-            <div class="w3-content newsBody">
-                <h1 class="title" style="margin-bottom:7%;">Notícias</h1>
+            <h1 class="title" style="margin-bottom:7%;">Notícias</h1>
+            <div class="w3-container newsBody">
                 <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao.jpg' %}"></a>
                 <div class="blog-body">
                     Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> Imposto é Roubo  </a>   </h1>
@@ -104,8 +114,7 @@
                 </div>
              </div>
             <!--News II-->
-             <div class="w3-content newsBody">
-                    <h1 class="title" style="margin-bottom:7%;">Notícias</h1>
+             <div class="w3-container newsBody">
                     <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao2.jpg' %}"></a>
                     <div class="blog-body">
                         Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> FGTS é Roubo  </a>   </h1>
@@ -117,8 +126,7 @@
                  </div>
 
                  <!--News III-->
-             <div class="w3-content newsBody">
-                        <h1 class="title" style="margin-bottom:7%;">Notícias</h1>
+             <div class="w3-container newsBody">
                         <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao1.jpg' %}"></a>
                         <div class="blog-body">
                             Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> Fim da CLT  </a>   </h1>
@@ -137,15 +145,17 @@
 
                   </div>
           </div>
+        <!--End News-->
+
+        <div class="col-xl-3 col-sm-1"></div>
+        <div class="col-xl-3 col-sm-1"></div>
 
 
-             <!--End News-->
-
-
-        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" style="margin-left:30%;">
+        <!--Begining of Feed Social Networks-->
+        <div class="col-md-5 col-sm-10 col-xs-12 wow fadeInUp">
             <!--News I-->
-            <div class="w3-content socialNetworkBody">
-                    <h1 class="title" style="margin-bottom:7%;">Rede Socais</h1>
+            <h1 class="title" style="margin-bottom:7%;">Rede Socais</h1>
+            <div class="w3-container socialNetworkBody">
                     <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao1.jpg' %}"></a>
                     <div class="blog-body">
                         Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> Imposto é Roubo  </a>   </h1>
@@ -156,8 +166,7 @@
                     </div>
                  </div>
                 <!--News II-->
-                 <div class="w3-content socialNetworkBody">
-                        <h1 class="title" style="margin-bottom:7%;">Notícias</h1>
+                 <div class="w3-container socialNetworkBody">
                         <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao2.jpg' %}"></a>
                         <div class="blog-body">
                             Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> FGTS é Roubo  </a>   </h1>
@@ -169,8 +178,7 @@
                      </div>
 
                      <!--News III-->
-                 <div class="w3-content socialNetworkBody">
-                            <h1 class="title" style="margin-bottom:7%;">Notícias</h1>
+                 <div class="container socialNetworkBody">
                             <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao.jpg' %}"></a>
                             <div class="blog-body">
                                 Postado em 12 Agosto 2019<h1>  <a href="blog-single.html"> Fim da CLT  </a>   </h1>
