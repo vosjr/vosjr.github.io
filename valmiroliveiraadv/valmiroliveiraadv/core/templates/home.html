@@ -6,137 +6,167 @@
 
 <!-- #banner start -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-
-   .newsBody {
-      display:none;
-
-   }
-   .SocialNetworkBody {
-       display:none;
-   }
-
-   .blog-body h1 a{
-    color: white !important;
-    }
-</style>
 
 <section id="banner" class="pb_0" >
-       <div class="container">
-          
+    <div class="container">
+        <!--start Why Choose Us Area -->
+        <div class="container transparencia" style="background-color:#08001B;">
+            <br><div class="row text-center  ">
+            <div class="wow">
+                <h1 style="color:white;">Atualizações</h1>
+                <p  style="color:white;"> Notícias e Novidades em nossas Redes Sociais </p><br>
+            </div>
+            </div>
 
-<!--start Why Choose Us Area -->
- <div class="container transparencia" style="background-color:#08001B;">
-    <br><div class="row text-center  ">
-       <div class="wow">
-          <h1 style="color:white;">Atualizações</h1>
-          <p  style="color:white;"> Notícias e Novidades em nossas Redes Sociais </p><br>
-       </div>
-    </div>
+        <br />
 
-    <div class="row">
-
-          <div class="col-md-5 col-sm-10 col-xs-12 wow fadeInUp">
-            <!--News I-->
-            <h1 class="title text-left" style="margin-left:4%;margin-bottom:7%;color:white;">Notícias</h1>
-            <div class="w3-container newsBody">
-                <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao.jpg' %}"></a>
-                <div>
-                    <h6 style="color:grey"> Postado em 12 Agosto 2019</h6><h1>  <a href="blog-single.html"> Teste  </a>   </h1>
-                    <p >Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
-                    <div class="">
-                    <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
-                    </div>
-                </div>
-             </div>
-            <!--News II-->
-             <div class="w3-container newsBody">
-                    <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao2.jpg' %}"></a>
-                    <div>
-                        <h6 style="color:white;">Postado em 12 Agosto 2019</h6><h1>  <a href="blog-single.html"> Teste  </a>   </h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
-                        <div class="">
-                        <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
-                        </div>
-                    </div>
-                 </div>
-
-                 <!--News III-->
-             <div class="w3-container newsBody">
-                        <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao1.jpg' %}"></a>
-                        <div>
-                            <h6 style="color:grey">Postado em 12 Agosto 2019</h6><h1>  <a href="blog-single.html"> Teste  </a>   </h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
-                            <div class="">
-                            <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+            <!--Start Feed Field-->
+            <div class="row">
+                <div class="col-md-5 col-sm-10 col-xs-12 wow fadeInUp">
+                <!--News I-->
+                    <h1 class="title text-left" style="margin-left:4%;margin-bottom:7%;color:white;">Notícias</h1>
+                        <div class="w3-container newsBody">
+                            <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao.jpg' %}"></a>
+                            <div>
+                                <h6 style="color:grey">
+                                    Postado em 12 Agosto 2019
+                                </h6>
+                                <h1>
+                                    <a href="blog-single.html">Teste</a>
+                                </h1>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.
+                                </p>
+                                <div class="">
+                                    <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+                                </div>
                             </div>
                         </div>
-                     </div>
-              <br>
-             <div class="w3-center">
-                    <div class="w3-section">
-                       <button class="btn btn-secondary" onclick="plusDivsNews(-1)">❮ </button>
-                        <button class="btn btn-secondary" onclick="plusDivsNews(1)"> ❯</button>
-                    </div>
-
-                  </div>
-          </div>
-        <!--End News-->
-        <!--Two Columns of grid for margin -->
-        <div class="col-xl-3 col-sm-1"></div>
-        <div class="col-xl-3 col-sm-1"></div>
-
-
-        <!--Begining of Feed Social Networks-->
-        <div class="col-md-5 col-sm-10 col-xs-12 ">
-           <!--News I-->
-           <h1 class="title text-left" style="margin-left:4%;margin-bottom:7%;color:white;">Rede Socais</h1>
-           <div class="w3-container socialNetworkBody">
-                   <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao1.jpg' %}"></a>
-                   <div>
-                       <h6 style="color:grey">Postado em 12 Agosto 2019</h6><h1>  <a href="blog-single.html"> Temos de ser fortes.  </a>   </h1>
-                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
-                       <div class="">
-                       <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
-                       </div>
-                   </div>
-                </div>
-               <!--News II-->
-                <div class="w3-container socialNetworkBody">
-                       <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao2.jpg' %}"></a>
-                       <div>
-                           <h6 style="color:grey">Postado em 12 Agosto 2019</h6><h1>  <a href="blog-single.html"> Família acima de tudo.  </a>   </h1>
-                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
-                           <div class="">
-                           <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
-                           </div>
-                       </div>
-                    </div>
-
-                    <!--News III-->
-                <div class="container socialNetworkBody">
-                           <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao.jpg' %}"></a>
-                           <div>
-                               <h6 style="color:grey">Postado em 12 Agosto 2019</h6><h1>  <a href="blog-single.html"> Irei fazer uma proposta que você não pode recusar.  </a>   </h1>
-                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.    </p>
-                               <div class="">
-                               <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
-                               </div>
-                           </div>
+                    <!--News II-->
+                        <div class="w3-container newsBody">
+                            <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao.jpg' %}"></a>
+                            <div>
+                                <h6 style="color:grey">
+                                    Postado em 12 Agosto 2019
+                                </h6>
+                                <h1>
+                                    <a href="blog-single.html">Teste</a>
+                                </h1>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.
+                                </p>
+                                <div class="">
+                                    <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+                                </div>
+                            </div>
                         </div>
-<br>
-                <div class="w3-center">
-                       <div class="w3-section">
-                          <button class="btn btn-secondary" onclick="plusDivsSN(-1)">❮</button>
-                           <button class="btn btn-secondary" onclick="plusDivsSN(1)">❯</button>
-                       </div>
 
-                     </div>
-</div>
+                        <!--News III-->
+                        <div class="w3-container newsBody">
+                                <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao1.jpg' %}"></a>
+                                <div>
+                                        <h6 style="color:grey">
+                                            Postado em 12 Agosto 2019
+                                        </h6>
+                                        <h1>
+                                            <a href="blog-single.html">Teste</a>
+                                        </h1>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.
+                                        </p>
+                                        <div class="">
+                                            <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+                                        </div>
+                                    </div>
+                        </div>
+                    <br />
+                        <!--Slide Controls-->
+                        <div class="w3-center">
+                            <div class="w3-section">
+                            <button class="btn btn-secondary" onclick="plusDivsNews(-1)">❮ </button>
+                                <button class="btn btn-secondary" onclick="plusDivsNews(1)"> ❯</button>
+                            </div>
+                        </div>
+                </div>
+                <!--End News-->
+                <!--Two Columns of grid for margin -->
+                <div class="col-xl-3 col-sm-1"></div>
+                <div class="col-xl-3 col-sm-1"></div>
 
 
-                 <!--End News-->
-        </div><br />
+                <!--Begining of Feed Social Networks-->
+                <div class="col-md-5 col-sm-10 col-xs-12 ">
+                <!--News I-->
+                <h1 class="title text-left" style="margin-left:4%;margin-bottom:7%;color:white;">Notícias</h1>
+                        <div class="w3-container socialNetworkBody">
+                            <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao.jpg' %}"></a>
+                            <div>
+                                <h6 style="color:grey">
+                                    Postado em 12 Agosto 2019
+                                </h6>
+                                <h1>
+                                    <a href="blog-single.html">Teste</a>
+                                </h1>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.
+                                </p>
+                                <div class="">
+                                    <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+                                </div>
+                            </div>
+                        </div>
+                    <!--News II-->
+                        <div class="w3-container socialNetworkBody">
+                            <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao.jpg' %}"></a>
+                            <div>
+                                <h6 style="color:grey">
+                                    Postado em 12 Agosto 2019
+                                </h6>
+                                <h1>
+                                    <a href="blog-single.html">Teste</a>
+                                </h1>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.
+                                </p>
+                                <div class="">
+                                    <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--News III-->
+                        <div class="w3-container socialNetworkBody">
+                                <a href="blog-single.html">      <img src="{% static 'assets/images/poderoso_chefao1.jpg' %}"></a>
+                                <div>
+                                        <h6 style="color:grey">
+                                            Postado em 12 Agosto 2019
+                                        </h6>
+                                        <h1>
+                                            <a href="blog-single.html">Teste</a>
+                                        </h1>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.
+                                        </p>
+                                        <div class="">
+                                            <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
+                                        </div>
+                                    </div>
+                        </div>
+                    <br />
+
+                        <!--Slide Controls-->
+                        <div class="w3-center">
+                            <div class="w3-section">
+                            <button class="btn btn-secondary" onclick="plusDivsSN(-1)">❮ </button>
+                                <button class="btn btn-secondary" onclick="plusDivsSN(1)"> ❯</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+                        <!--End News-->
+                </div><br />
     </div>
 </section><br><br>
 

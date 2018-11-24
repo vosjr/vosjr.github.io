@@ -99,6 +99,18 @@ This files contents are outlined below.
 
 }
 
+/*-----------------------------------------------------
+  1.Slide Classes
+------------------------------------------------------*/
+.newsBody {
+    display:none;
+
+}
+
+.SocialNetworkBody {
+    display:none;
+}
+
 .formulario-contato {
     margin-left: 5%;
     margin-bottom: 0;
@@ -2207,7 +2219,7 @@ ul {
 }
 .blog-body h1 a{
     font-size: 20px;
-    color: #1c233b !important;
+    color: #white !important;
     font-weight: 700;
     margin:40px 0px;
 }
