@@ -22,10 +22,22 @@
       <!--Template Styles CSS-->
       <link href="static/assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+   
    </head>
+
+    <style>
+    .navbar-collapse.in {
+      overflow-y: visible; 
+      margin-top: 40px;
+    }
+        
+    
+    </style>
+
+
    <body>
 
-      <div class="bg-banner-img clip-ellipse">
+      <div class="bg-banner-img clip-ellipse" id="main-navigation ">
          <div class="ovrllay">
             <!-- Header_Area -->
             <nav class="navbar navbar-default header_aera affix-top">
@@ -33,18 +45,17 @@
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="col-md-4 p0">
                      <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#min_navbar">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#min_navbar" style="margin-bottom:-55px;">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand logo-biss" href="/" style="text-shadow: 2px 2px #000000; color:#DCDCDC;">Valmir Oliveira Advogados </a>
-
                      </div>
                   </div>
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="col-md-8 p0">
-                     <div class="collapse navbar-collapse" id="min_navbar">
+                     <div class="collapse navbar-collapse" id="min_navbar" style="">
                         <ul class="nav navbar-nav navbar-right">
                            <li class="dropdown submenu">
                               <a href="/" class="">Início</a>
