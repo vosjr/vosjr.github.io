@@ -1,5 +1,5 @@
 <?php
-
+use App\NoticiaSums;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('homepage');
+	$nots = NoticiaSums::all();
+    return view('homepage', compact('nots'));
 });
 
 Route::get('/escritorio', function () {
@@ -36,5 +37,13 @@ Route::get('/contato', function () {
     return view('contato');
 });
 
+Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/cadastroNoticias', 'CadastroNoticiaController@create')->name('cadastroNoticias');
+
+Route::post('cadastroNoticia/save', 'CadastroNoticiaController@store');
+Route::get('noticia/edit/{id}', 'CadastroNoticiaController@edit');
+Route::get('noticia/delet/{id}', 'CadastroNoticiaController@destroy');
+Route::post('noticia/update/{id}', 'CadastroNoticiaController@update');

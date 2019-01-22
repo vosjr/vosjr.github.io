@@ -12,7 +12,6 @@
     background-color: #08001B;
     border: 1px solid #404249;
     color:white;
-
     }
     .list-group-item-text{
     color:white;

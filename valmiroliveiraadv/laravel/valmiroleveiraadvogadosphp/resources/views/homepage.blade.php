@@ -21,60 +21,28 @@
                 <div class="col-md-5 col-sm-10 col-xs-12 wow fadeInUp">
                 <!--News I-->
                     <h1 class="title text-left" style="margin-left:4%;margin-bottom:7%;color:white;">Notícias</h1>
+@if(count($nots)  > 0)
+                    @foreach($nots as $not)
                         <div class="w3-container newsBody">
-                            <a href="blog-single.html">      <img src="static/assets/images/poderoso_chefao.jpg"></a>
+                            <a href="blog-single.html"><img src="{{$not->imagem}}"></a>
                             <div>
                                 <h6 style="color:grey">
-                                    Postado em 12 Agosto 2019
+                                    {{$not->created_at}}
                                 </h6>
                                 <h1>
-                                    <a href="blog-single.html">Teste</a>
+                                    <a href="blog-single.html">{{$not->titulo}}</a>
                                 </h1>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.
+                                    {{$not->conteudo}}
                                 </p>
                                 <div class="">
+                                    <a href="/noticia/edit/{{$not->id}}"><button class="btn btn-primary">edit</button></a>
+                                    <a href="/noticia/delet/{{$not->id}}"><button class="btn btn-danger">delet</button></a>
                                     <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
                                 </div>
                             </div>
                         </div>
-                    <!--News II-->
-                        <div class="w3-container newsBody">
-                            <a href="blog-single.html">      <img src="static/assets/images/poderoso_chefao.jpg"></a>
-                            <div>
-                                <h6 style="color:grey">
-                                    Postado em 12 Agosto 2019
-                                </h6>
-                                <h1>
-                                    <a href="blog-single.html">Teste</a>
-                                </h1>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.
-                                </p>
-                                <div class="">
-                                    <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--News III-->
-                        <div class="w3-container newsBody">
-                                <a href="blog-single.html">      <img src="static/assets/images/poderoso_chefao1.jpg"></a>
-                                <div>
-                                        <h6 style="color:grey">
-                                            Postado em 12 Agosto 2019
-                                        </h6>
-                                        <h1>
-                                            <a href="blog-single.html">Teste</a>
-                                        </h1>
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry.
-                                        </p>
-                                        <div class="">
-                                            <a href="blog-single.html" class="button-buttom"> Leia mais  </a>
-                                        </div>
-                                    </div>
-                        </div>
+                    @endforeach
                     <br />
                         <!--Slide Controls-->
                         <div class="w3-center">
@@ -84,6 +52,7 @@
                             </div>
                         </div>
                 </div>
+                @endif
                 <!--End News-->
                 <!--Two Columns of grid for margin -->
                 <div class="col-xl-3 col-sm-1"></div>

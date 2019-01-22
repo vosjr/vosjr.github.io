@@ -75,6 +75,7 @@
                            <li class="dropdown submenu">
                               <a href="contato" class="">Contato</a>
                            </li>
+                           
                         </ul>
                      </div>
                      <!-- /.navbar-collapse -->
@@ -109,9 +110,17 @@
                         <a href="" target="_blank"><i id="social-tw" class="fa fa-twitter fa-2x social"></i></a>
                         <a href="" target="_blank"><i id="social-em" class="fa fa-instagram fa-2x social"></i></a>
                      </div> -->
+                     @guest
                      <p style="color:white;">Área administrativa</p>
 
-                     <br><button class="btn btn-secondary" style="opacity:0.7;" href="admin">Login</button>
+                     <br><button class="btn btn-secondary" style="opacity:0.7;"><a href="login">Login</a></button>
+                     @endguest
+                     
+                     @auth
+                          <p style="color:white;">Notícias</p>
+
+                     <br><button class="btn btn-secondary" style="opacity:0.7;"><a href="login">Publicar</a></button>
+                           @endauth
                   </div>
 <!--
                   <br><br>
